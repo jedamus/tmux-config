@@ -1,8 +1,7 @@
 # ~/.tmuxinator/backup.yml
 
 name: backup
-root: /media/leander/Expansion Drive/Backup
-#root: /mnt
+root: .backupdir/Backup
 
 # Optional tmux socket
 # socket_name: foo
