@@ -2,6 +2,7 @@
 
 name: backup
 root: /media/leander/Expansion Drive/Backup
+#root: /mnt
 
 # Optional tmux socket
 # socket_name: foo
@@ -31,6 +32,6 @@ windows:
   - backup:
       layout: 7dfd,143x36,0,0[143x21,0,0,0,143x7,0,22,1,143x6,0,30,2]
       panes:
-        - sleep 5; ~/bin/tailbackup.txt.sh
-        - sleep 5; ~/bin/tailbackup.err.sh
-        - ~/bin/backup.sh
+        - sleep 5; ~/bin/tailbackup.txt_neu.sh
+        - sleep 5; ~/bin/tailbackup.err_neu.sh
+        - ~/bin/backup_neu.sh
