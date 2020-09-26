@@ -1,6 +1,7 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 # erzeugt Mittwoch, 07. Juni 2017 19:34 (C) 2017 von Leander Jedamus
+# modifiziert Samstag, 26. September 2020 16:00 von Leander Jedamus
 # modifiziert Freitag, 20. April 2018 08:29 von Leander Jedamus
 # modifiziert Montag, 16. April 2018 21:14 von Leander Jedamus
 # modifiziert Mittwoch, 11. Oktober 2017 18:43 von Leander Jedamus
