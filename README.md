@@ -1,1 +1,5 @@
-## My Tmux-Configuration
+# tmux
+
+## Getting started
+
+My Tmux-Configuration...
