@@ -1,0 +1,39 @@
+# ~/.tmuxinator/ssh.yml
+
+name: ssh
+root: ~
+
+# Optional tmux socket
+# socket_name: foo
+
+# Runs before everything. Use it to start daemons etc.
+# pre: sudo /etc/rc.d/mysqld start
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+## tmux_command: byobu
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+# startup_window: logs
+
+# Controls whether the tmux session should be attached to automatically. Defaults to true.
+# attach: false
+
+# Runs after everything. Use it to attach to tmux with custom options etc.
+# post: tmux -CC attach -t cobol
+
+windows:
+  - ssh:
+      layout: c110,80x23,0,0{40x23,0,0[40x11,0,0,0,40x11,0,12,3],39x23,41,0[39x11,41,0,1,39x11,41,12,2]}
+      panes:
+        -
+        - raspi64: ssh pi@raspi64.local
+        - pilite: ssh pi@pilite.local
+        - nvidia: ssh leander@nvidia.local
+#  - server: bundle exec rails s
+#  - logs: tail -f log/development.log
