@@ -31,9 +31,9 @@ windows:
   - ssh:
       layout: c110,80x23,0,0{40x23,0,0[40x11,0,0,0,40x11,0,12,3],39x23,41,0[39x11,41,0,1,39x11,41,12,2]}
       panes:
-        -
-        - raspi64: ssh pi@raspi64.local
-        - pilite: ssh pi@pilite.local
-        - nvidia: ssh leander@nvidia.local
+        - raspberrypi
+        - raspi64: ssh raspi64
+        - pilite: ssh pilite
+        - nvidia: ssh nvidia
 #  - server: bundle exec rails s
 #  - logs: tail -f log/development.log
